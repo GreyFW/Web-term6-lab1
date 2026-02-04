@@ -6,7 +6,6 @@ fun main(args: Array<String>) {
     val text = args.joinToString(" ")
     val words = text.split("\\s+".toRegex()).filter { it.isNotBlank() }
 
-    // выше код из задания 1, ниже дополнили для задания 2:
     val alphabetic = words.sorted()
 
     // выше код из задания 2, ниже дополнили для задания 3:
