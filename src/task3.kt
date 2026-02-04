@@ -9,6 +9,6 @@ fun main(args: Array<String>) {
     val alphabetic = words.sorted()
 
     // выше код из задания 2, ниже дополнили для задания 3:
-    val unique = alphabetic.distinct().joinToString(" ")
-    println(unique)
+    val unique = alphabetic.distinct()
+    unique.forEach{ println(it) }
 }

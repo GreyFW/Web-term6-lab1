@@ -15,6 +15,6 @@ fun main(args: Array<String>) {
     val wordsWithFreqs = frequencies.entries
         .sortedWith(compareByDescending<Map.Entry<String, Int>> { it.value }
             .thenBy{ it.key })
-        .joinToString(" ") { "${it.key} ${it.value}" }
-    println(wordsWithFreqs)
+
+    wordsWithFreqs.forEach { println("${it.key} ${it.value}") }
 }
